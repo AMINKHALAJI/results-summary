@@ -1,0 +1,239 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: hsl(221, 100%, 96%);
+    font-family: 'Outfit', sans-serif;
+    
+}
+
+.card{
+
+    margin: 100px auto;
+    width: 600px;
+    height: 450px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.result{
+    background-color:hsla(256, 72%, 46%, 0.9);
+    border-radius: 20px;
+    color: white;
+    
+}
+
+.summary{
+    border-radius: 20px;
+    background-color: white;
+    
+    
+}
+
+.res-title{
+    text-align: center;
+    margin: 20px auto;
+    opacity: 50%;
+    font-size: 20px;
+}
+
+.res-point {
+    margin: 50px auto;
+    position: relative;
+    text-align: center;
+    background-color:hsla(241, 81%, 54%,0.4) ;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.res-score-point{
+    font-size: 60px;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+}
+
+.res-point .res-max{
+    opacity: 30%;
+    position: absolute;
+    top: 70%;
+    left: 37%;
+    font-size: 14px;
+    color: white;
+}
+
+.res-quality{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.res-description{
+    text-align: center;
+    margin: 4px 50px 50px 40px;
+    padding: 5px 10px;
+    opacity: 50%;
+    font-size: 14px;
+    
+}
+
+.sum-title{
+    margin-top: 20px;
+    margin-left: 40px;
+    opacity: 70%;
+    font-size: 20px;
+    
+}
+
+.react-card{
+    background-color: hsla(0, 100%, 67%,0.1);
+    display: flex;
+    justify-content: space-between;
+
+    margin: 30px 40px 10px;
+    padding: 15px 15px;
+    border-radius: 5px;
+}
+.react-card , .mem-card, .verbal-card , .vis-card {
+    position: relative;
+}
+.react-icon{
+    align-self: center;
+    color:hsla(0, 100%, 67%,0.5) ;
+    font-size: 14px;
+    
+    
+}
+
+.react-title{
+    color:hsla(0, 100%, 67%,0.5) ;
+    align-self: center;
+    margin-right: 35px;
+    font-size: 15px;
+}
+
+.react-point , .mem-point , .verbal-point , .vis-point{
+    font-size: 14px;
+    align-self: center;
+    margin-left: 10px;
+    font-weight: 800;
+    
+}
+.res-max{
+    font-size: 14px;
+    align-self: center;
+    font-weight: 800;
+    opacity: 30%;
+}
+
+.mem-card{
+    background-color: hsla(39, 100%, 56%,0.1);
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 40px;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+.mem-icon{
+    align-self: center;
+    color:hsla(39, 100%, 56%,0.5) ;
+    font-size: 14px;
+}
+
+.mem-title{
+    color:hsla(39, 100%, 56%,0.5);
+    align-self: center;
+    margin-right: 35px;
+    font-size: 15px;
+}
+
+.verbal-card{
+    background-color: hsla(166, 100%, 37%,0.1);
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 40px;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+.verbal-icon{
+    align-self: center;
+    color:hsla(166, 100%, 37%,0.5) ;
+    font-size: 14px;
+}
+.verbal-title{
+    color:hsla(166, 100%, 37%,0.5);
+    align-self: center;
+    margin-right: 35px;
+    font-size: 15px;
+}
+
+.vis-card{
+    background-color: hsla(234, 85%, 45%,0.1);
+    display: flex;
+    justify-content: space-between;
+    
+    margin: 10px 40px 60px;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+.vis-icon{
+    align-self: center;
+    color:hsla(234, 85%, 45%,0.5) ;
+    font-size: 14px;
+}
+.vis-title{
+    color:hsla(234, 85%, 45%,0.5);
+    align-self: center;
+    margin-right: 35px;
+    font-size: 15px;
+}
+
+.cont-btn{
+
+    background-color:hsla(241, 81%, 54%,0.9) ;
+    text-decoration: none;
+    margin-left: 40px;
+    padding: 15px 80px;
+    border-radius: 30px;
+    color: white;
+
+}
+
+.attribution { 
+    font-size: 11px; 
+   position: absolute;
+   bottom: -40px;
+   right: 170px;
+ }
+
+.attribution a { color: hsl(228, 45%, 44%);
+text-decoration: none; }
+
+@media screen and (max-width: 750px) {
+    .card{
+
+        display: grid;
+        margin-top: 20px;
+        margin-left: 15%;
+        position: relative;
+        grid-template-columns: 300px;
+        grid-template-rows: 410px 410px ;
+
+        flex-direction: column;
+        
+    }
+    .attribution {
+        bottom: -410px;
+        right: 320px;
+        
+    }
+    
+    
+}
